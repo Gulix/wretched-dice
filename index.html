@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Wretched Dice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Lexend+Tera" rel="stylesheet">
+  </head>
+<body>
+  <div class="page-header">
+    <div class="global-container">
+      <h1>The Wretched Dice</h1>
+      <h3>A dice-roller for Wretched & Alone games</h3>
+
+
+      <div class="dice-container" data-bind="foreach: dice">
+        <div class="dice-child" data-bind="css: cssValue"><span data-bind="text: text"></span></div>
+      </div>
+      <div class="text">Remaining dice : <span data-bind="text: currentDice"></span>/<span data-bind="text: totalDice"></span></div>
+      <div class="text"># of rolls : <span data-bind="text: nbRoll"></span></div>
+
+      <div class="dice-container used" data-bind="foreach: usedDice">
+        <div class="dice-child" data-bind="class: cssValue"><span data-bind="text: text"></span></div>
+      </div>
+
+      <div class="buttons-container">
+        <div class="button"><a data-bind="click: roll">Roll</a></div>
+        <div class="button"><a data-bind="click: store">Store</a></div>
+        <div class="button"><a data-bind="click: reset">Reset</a></div>
+      </div>
+      <div class="text"># of dice in reset<input type="number" data-bind="value: nbDiceReset" name="quantity" min="1" max="150">
+    </div>
+  </div>
+
+  <script src="js/vendor/require.min.js" data-main="js/main.js"></script>
+</body>
+</html>

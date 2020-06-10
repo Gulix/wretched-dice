@@ -1,0 +1,164 @@
+body {
+  background: rgb(2,0,38);
+  background: linear-gradient(90deg, rgba(2,0,38,1) 0%, rgba(20,59,61,1) 35%, rgba(3,42,50,1) 100%);
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  color: #FFFFFF;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+  font-size: 2.8em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Righteous', cursive;
+  color: #5ab9a7;
+  font-size: 2.3em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.global-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-header {
+  font-family: 'Oswald', sans-serif;
+}
+
+/***********/
+/* Buttons */
+/***********/
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    margin: 10px auto;
+}
+
+.button {
+    min-width: 2em;
+    min-height: 2em;
+    margin: 1em;
+}
+
+.button a {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  font-family: 'Lexend Tera', sans-serif;
+}
+
+.button a:hover {
+  color: #000000 !important;
+  background: #5ab9a7;
+  border-color: #5ab9a7 !important;
+  transition: all 0.4s ease 0s;
+}
+
+/***********************/
+/* Dice Grid Displayer */
+/***********************/
+.dice-container-shadow {
+  -webkit-border-radius: 0% 0% 100% 100% / 0% 0% 8px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0,.30) 0 2px 3px;
+}
+
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px auto;
+    background: rgb(104,98,224);
+    background: linear-gradient(90deg, rgba(104,98,224,1) 0%, rgba(61,123,126,1) 35%, rgba(87,133,143,1) 100%);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #fff inset,
+                -1px -1px 2px #fff inset;
+    border-radius: 3px/6px;
+}
+
+.dice-child {
+    min-width: 1.3em;
+    min-height: 1.3em;
+    margin: 0.1em;
+    border-radius: 0.3em;
+    background-color: lightblue;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+
+.dice-child span {
+
+  font-family: 'Lexend Tera', sans-serif;
+  font-size: 16px;
+}
+
+.val1 {
+  background-color: #AFAFAF;
+}
+
+.val2 {
+  background-color: #c5e8b7;
+  color: #082E27;
+}
+
+.val3 {
+  background-color: #abe098;
+  color: #082E27;
+}
+
+.val4 {
+  background-color: #83d475;
+  color: #082E27;
+}
+
+.val5 {
+  background-color: #57c84d;
+  color: #082E27;
+}
+
+.val6 {
+  background-color: #2eb62c;
+  color: #082E27;
+}
+
+.used {
+  margin-top: 5px;
+  background-color: #444444;
+}
+
+.used .dice-child {
+  background-color: #AFAFAF;
+}
+
+.red-child {
+    background-color: darkred;
+}
+.green-child {
+    background-color: darkgreen;
+}
+.yellow-child {
+    background-color: khaki;
+}
+
+.text {
+  font-family: 'Lexend Tera', sans-serif;
+  color: white;
+}
